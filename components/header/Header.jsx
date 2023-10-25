@@ -30,7 +30,7 @@ export default () => {
                 <i class="fa fa-bell"></i><span class="headerIconBadge">2</span>
                 </div>
             </div> 
-               <img src='/noAvatar.png' alt='profileImage' style="width:30px" />
+               <img src='/assets/noAvatar.png' alt='profileImage' style="width:30px" />
         </div>    
     </div>
   )
