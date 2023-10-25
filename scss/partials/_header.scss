@@ -1,0 +1,99 @@
+.headerContainer{
+    display: flex;
+    align-items: center;
+    background: #14121d;
+    width:100%;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.headerLeft{
+    flex: 3;
+}
+.headerCenter{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex: 5;
+    border-radius: 15px;
+    background-color: white;
+}
+.searchInput{
+    height: 30px;
+    width: 80%;
+    border: none;
+}
+i{
+    padding-left: 8px;
+}
+.searchInput:focus{
+    outline: none;
+}
+.headerCenter i{
+    padding: 0 0 0 10px;
+    color: $primary;
+    font-size: 20px !important;
+}
+.headerRight{
+    flex: 4;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerLinks{
+    margin-left: 10px;
+}
+.headerLink{
+   margin-right: 10px;
+   font-size: 14px;
+   cursor: pointer;
+   color: $primary;
+}
+.profile-divider{
+    padding: 0 10px 0 0;
+    color: $primary;
+}
+.headerImg{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.logo{
+    font-size: 18px;
+    display: flex;
+    font-weight: bold;
+    margin: 0 10px;
+    color: $primary;
+    cursor: pointer;
+}
+.headerIcons{
+    display: flex;
+    cursor: pointer;
+}
+.headerIconItem{
+    position: relative;
+    margin-right: 15px;
+}
+.headerIconBadge{
+    position: absolute;
+    font-size: 14px;
+    height: 15px;
+    width: 15px;
+    top: -7px;
+    right: -7px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 768px){
+    .logo{
+        font-size: 24px;
+        margin-left: 20px;
+    }
+}
