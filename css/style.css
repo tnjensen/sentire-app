@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px;
+  background-color: #14121d;
+}
+
 .headerContainer {
   display: flex;
   align-items: center;
@@ -10,22 +21,23 @@
 }
 
 .headerLeft {
-  flex: 3;
+  flex: 2;
 }
 
 .headerCenter {
   display: flex;
   width: 100%;
   align-items: center;
-  flex: 5;
+  flex: 4;
   border-radius: 15px;
   background-color: white;
 }
 
 .searchInput {
   height: 30px;
-  width: 80%;
+  width: 75%;
   border: none;
+  padding: 0 0 0 5px;
 }
 
 i {
@@ -100,9 +112,9 @@ i {
   font-size: 14px;
   height: 15px;
   width: 15px;
-  top: -7px;
-  right: -7px;
-  background-color: red;
+  top: -5px;
+  right: -10px;
+  background-color: #130a99;
   border-radius: 50%;
   display: flex;
   align-items: center;

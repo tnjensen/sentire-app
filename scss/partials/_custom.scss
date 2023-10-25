@@ -1,3 +1,29 @@
 $primary: #62E636;
-$secondary: #d33891;
+$secondary: #130a99;
+$background: #14121d;
 
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+$large-width: 1280px;
+
+@mixin mobile{
+    @media (min-width:#{$mobile-width}){
+        @content
+    }
+}
+@mixin tablet{
+    @media (min-width:#{$tablet-width}){
+        @content
+    }
+}
+@mixin desktop{
+    @media (min-width:#{$desktop-width}){
+        @content
+    }
+}
+@mixin large{
+    @media (min-width:#{$large-width}){
+        @content
+    }
+}

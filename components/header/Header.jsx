@@ -1,4 +1,3 @@
-import styles from './Header.module.css';
 import {h, Fragments} from 'start-dom-jsx';
 
 export default () => {
