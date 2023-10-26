@@ -1,11 +1,14 @@
 .headerContainer{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    background: #14121d;
+    background: $background;
     width:100%;
-    height: 55px;
+    min-height: 55px;
     position: sticky;
     top: 0;
+    margin-top: 10px;
     z-index: 999;
 }
 .headerLeft{
@@ -15,7 +18,9 @@
     display: flex;
     width: 100%;
     align-items: center;
-    flex: 4;
+    order: 3;
+    flex: 0 0 100%;
+    margin-top: 10px;
     border-radius: 15px;
     background-color: white;
 }
@@ -37,7 +42,6 @@ i{
     font-size: 20px !important;
 }
 .headerRight{
-    flex: 4;
     display: flex;
     color: white;
     justify-content: space-around;
@@ -45,6 +49,7 @@ i{
 }
 .headerLinks{
     margin-left: 10px;
+    display: none;
 }
 .headerLink{
    margin-right: 10px;
@@ -94,8 +99,26 @@ i{
     justify-content: center;
 }
 @media screen and (min-width: 768px){
+    .headerContainer{
+        flex-wrap: nowrap;
+    }
+    .headerLeft{
+        order: 1;
+    }
+    .headerCenter{
+        order: 2;
+        flex: 4;
+        margin-top: 0;
+    }
+    .headerRight{
+        flex: 4;
+        order: 3;
+    }
     .logo{
         font-size: 24px;
         margin-left: 20px;
+    }
+    .headerLinks{
+        display: block;
     }
 }
