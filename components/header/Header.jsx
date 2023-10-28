@@ -12,9 +12,9 @@ export default () => {
         </div>
         <div class="headerRight">
             <div class="headerLinks">
-                <span class="headerLink">Login</span>
+                <span class="headerLink loginLink">Login</span>
                 <span class="profile-divider">|</span>
-                <span class="headerLink">Register</span>
+                <span class="headerLink registerLink">Register</span>
             </div>
             <div class="headerIcons">
                 <div class="headerIconItem">

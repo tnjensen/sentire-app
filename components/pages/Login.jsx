@@ -1,12 +1,11 @@
-import { useRef } from 'react';
-import styles from './Login.module.css';
+import {h, Fragments} from 'start-dom-jsx';
 import displayMessage from '../common/displayMessage';
 import { saveUser, saveToken } from '../common/storage';
 import { baseUrl } from '../common/settings';
 
 function Login() {
-  const email = useRef();
-  const password = useRef();
+  const email = document.querySelector('#email');
+  const password = document.querySelector('#password');
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -62,21 +61,21 @@ function Login() {
     }
 }
   return (
-    <div className={styles.login}>
-    <div className={styles.wrapper}>
-        <div className={styles.loginLeft}>
-            <h3 className={styles.loginLogo}>Social App</h3>
-            <span className={styles.loginDesc}>
-            Log in to connect with your friends with our Social App
+    <div class="login-form">
+    <div class="wrapper">
+        <div class="loginLeft">
+            <h3 class="loginLogo">Sentire App</h3>
+            <span class="loginDesc">
+            Log in to connect with your listening friends
             </span>
         </div>
-        <div className={styles.loginRight}>
-            <form className={styles.loginBox} onSubmit={handleClick}>
-                <input placeholder='email' type="email" className={styles.loginInput} ref={email} required />
-                <input placeholder='password' type="password" className={styles.loginInput} ref={password} required minLength="6" />
-                <button className={styles.loginButton}>Log in</button>
-                <span className={styles.forgotPassword}>Forgot password ?</span>
-                <button className={styles.registerButton}>Create a new account</button>     
+        <div class="loginRight">
+            <form class="loginBox" onSubmit={handleClick}>
+                <input placeholder='email' type="email" class="loginInput" id="email" required />
+                <input placeholder='password' type="password" class="loginInput" id="password" required minLength="6" />
+                <button class="loginButton">Log in</button>
+                <span class="forgotPassword">Forgot password ?</span>
+                <button class="registerButton">Create a new account</button>     
             </form>          
         </div>
     </div>

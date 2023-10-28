@@ -1,10 +1,9 @@
-import { useRef } from 'react';
-import styles from './Register.module.css';
+import {h, Fragments} from 'start-dom-jsx';
 
 export default function Register() {
-  const email = useRef();
-  const password = useRef();
-  const confirmPassword = useRef();
+  const email = document.querySelector('#email');
+  const password = document.querySelector('#password');
+  const confirmPassword = document.querySelector('#confirm-password');
   
   const handleClick = async (e) => {
     e.preventDefault();
@@ -24,21 +23,20 @@ export default function Register() {
    }  
 }
   return (
-    <div className={styles.register}>
-    <div className={styles.wrapper}>
-        <div className={styles.registerLeft}>
-            <h3 className={styles.registerLogo}>Social App</h3>
-            <span className={styles.registerDesc}>
-            Register to keep in touch with friends with Social App
-            </span>
+    <div class="register-form">
+    <div class="wrapper">
+        <div class="registerLeft">
+            <h3 class="registerLogo">Sentire App</h3>
+            <span class="registerDesc">
+            Register to keep in touch with your listening friends           </span>
         </div>
-        <div className={styles.registerRight}>
-            <form className={styles.registerBox} onSubmit={handleClick}>
-                <input placeholder='email' required ref={email} className={styles.registerInput} type="email" />
-                <input placeholder='password' required ref={password} className={styles.registerInput} type="password" minLength="6" />
-                <input placeholder='confirm password' required ref={confirmPassword} className={styles.registerInput} type="password" />
-                <button className={styles.registerButton} type="submit">Sign up</button>     
-                <button className={styles.loginButton}>Log into Account</button>
+        <div class="registerRight">
+            <form class="registerBox" onSubmit={handleClick}>
+                <input placeholder='email' required id="email" class="registerInput" type="email" />
+                <input placeholder='password' required id="password" class="registerInput" type="password" minLength="6" />
+                <input placeholder='confirm password' required id="confirm-password" class="registerInput" type="password" />
+                <button class="registerButton" type="submit">Sign up</button>     
+                <button class="loginButton">Log into Account</button>
             </form>           
         </div>
     </div>

@@ -1,0 +1,31 @@
+.navbar-container{
+    
+    .navbar-items{
+        display: flex;
+        margin: 0 auto;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar-item{
+        padding: 0 15px;
+        border-radius: 30px;
+        border: 2px solid lighten($border, 30%);
+        height: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: $background;
+        color: #fffefe;
+
+        &:hover{
+            border: 2px solid lighten($border, 50%);
+            cursor: pointer;
+        }
+
+    }
+    .navbar-items .active{
+        background-color: $secondary;
+        border: none;
+    }
+}

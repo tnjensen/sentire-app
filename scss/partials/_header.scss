@@ -48,18 +48,16 @@ i{
     align-items: center;
 }
 .headerLinks{
-    margin-left: 10px;
+    /* margin-left: 10px; */
     display: none;
 }
 .headerLink{
-   margin-right: 10px;
+  /*  margin-right: 10px; */
    font-size: 14px;
    cursor: pointer;
    color: $primary;
 }
 .profile-divider{
-    margin: 0;
-    padding: 0 10px 0 0;
     color: $primary;
 }
 .headerImg{
@@ -119,6 +117,8 @@ i{
         margin-left: 20px;
     }
     .headerLinks{
-        display: block;
+        display: flex;
+        margin-left: 10px;
+        gap: 10px;
     }
 }

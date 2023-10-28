@@ -1,10 +1,8 @@
 .register-form{
     width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: azure;
 }
 .wrapper{
     width: 70%;
@@ -13,6 +11,7 @@
 }
 .registerRight, .registerLeft{
     flex: 1;
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
