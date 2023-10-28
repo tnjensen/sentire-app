@@ -19,12 +19,12 @@ for(let i = 0; i < buttons.length;i++){
 const loginLink = document.querySelector('.loginLink');
 
 loginLink.onclick = function(){
-    window.location = 'login.html';
+    window.location = '/login.html';
 }
 const registerLink = document.querySelector('.registerLink');
 
 registerLink.onclick = function(){
-    window.location = 'register.html';
+    window.location = '/register.html';
 }
 
 const logoLink = document.querySelector('.logo');
