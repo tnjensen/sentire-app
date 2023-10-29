@@ -1,7 +1,0 @@
-/* /index.html 200 */
-/* Redirects from what the browser requests to what we serve */
-/home                /
-/Login.html         /login
-/register.html      /register
-
-
