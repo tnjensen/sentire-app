@@ -9,6 +9,19 @@ body {
   color: #fffefe;
 }
 
+.wrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
 .headerContainer {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +42,6 @@ body {
 
 .headerCenter {
   display: flex;
-  width: 100%;
   align-items: center;
   order: 3;
   flex: 0 0 100%;
@@ -64,15 +76,40 @@ i {
   color: white;
   justify-content: space-around;
   align-items: center;
+  margin-right: 10px;
+}
+
+.profileIcon {
+  position: relative;
+  cursor: pointer;
 }
 
 .headerLinks {
-  /* margin-left: 10px; */
   display: none;
+  position: relative;
+}
+.headerLinks.active {
+  width: 100px;
+  height: 100px;
+  background-color: #14121d;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 40px;
+  right: 0;
+}
+.headerLinks.active .profile-divider {
+  display: none;
+}
+@media (min-width: 768px) {
+  .headerLinks {
+    display: flex;
+  }
 }
 
 .headerLink {
-  /*  margin-right: 10px; */
+  padding: 0 10px;
   font-size: 14px;
   cursor: pointer;
   color: #62E636;
@@ -103,6 +140,7 @@ i {
 .headerIcons {
   display: flex;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .headerIconItem {
@@ -144,11 +182,6 @@ i {
     font-size: 24px;
     margin-left: 20px;
   }
-  .headerLinks {
-    display: flex;
-    margin-left: 10px;
-    gap: 10px;
-  }
 }
 .navbar-container .navbar-items {
   display: flex;
@@ -182,12 +215,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.wrapper {
-  width: 70%;
-  height: 70%;
-  display: flex;
+  margin-top: 60px;
 }
 
 .loginRight, .loginLeft {
@@ -277,12 +305,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.wrapper {
-  width: 70%;
-  height: 70%;
-  display: flex;
+  margin-top: 60px;
 }
 
 .registerRight, .registerLeft {
@@ -350,4 +373,84 @@ i {
   font-size: 18px;
   cursor: pointer;
   margin-top: 15px;
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+.posts {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0;
+}
+
+.postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postTopLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.postUserName {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.postDate {
+  font-size: 12px;
+}
+
+.postCenter {
+  margin: 20px 0;
+}
+
+.postImg {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postLikeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.postLikeCounter {
+  font-size: 15px;
+}
+
+.postCommentText {
+  cursor: pointer;
+  border-bottom: 1px dashed gray;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
